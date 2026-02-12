@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviews - HireTrends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Interviews Page -->
+    <div class="container">
+        <div id="interviewsPage">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <h2>Interview Schedule</h2>
+                    <p>Your upcoming and past interviews</p>
+                </div>
+                <button id="interviewsBackBtn" class="logout-btn">Back to Dashboard</button>
+            </div>
+            
+            <div class="interviews-content">
+                <div class="interviews-section">
+                    <h2>Upcoming Interviews</h2>
+                    <div id="upcomingInterviewsContainer" class="interviews-grid">
+                        <!-- Upcoming interviews will be dynamically loaded here -->
+                    </div>
+                </div>
+                
+                <div class="interviews-section" style="margin-top: 2rem;">
+                    <h2>Past Interviews</h2>
+                    <div id="pastInterviewsContainer" class="interviews-grid">
+                        <!-- Past interviews will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/interviews.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

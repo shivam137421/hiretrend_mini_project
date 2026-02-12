@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - HireTrends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="container">
+        <div id="adminPanelSection">
+            <div id="adminPanel">
+                <div class="dashboard-header">
+                    <div class="user-info">
+                        <h2>Admin Panel</h2>
+                        <p>Manage Companies and Placement Data</p>
+                    </div>
+                    <button id="adminLogoutBtn" class="logout-btn">Logout</button>
+                </div>
+                
+                <!-- Add Company Form -->
+                <div class="form-container" style="margin-top: 2rem;">
+                    <h2 class="form-title">Add New Company</h2>
+                    
+                    <form id="companyForm">
+                        <div class="form-group">
+                            <label for="companyName" class="form-label">Company Name</label>
+                            <input type="text" id="companyName" class="form-input" placeholder="Enter company name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="jobRole" class="form-label">Job Role</label>
+                            <input type="text" id="jobRole" class="form-input" placeholder="Enter job role" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="package" class="form-label">Package (LPA)</label>
+                            <input type="text" id="package" class="form-input" placeholder="Enter package (e.g., ₹ 7.5 LPA)" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cgpaCutoff" class="form-label">CGPA Cutoff</label>
+                            <input type="number" id="cgpaCutoff" class="form-input" placeholder="Enter CGPA cutoff" step="0.1" min="0" max="10" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eligibleBranches" class="form-label">Eligible Branches</label>
+                            <select id="eligibleBranches" class="form-input" multiple required>
+                                <option value="CSE">Computer Science & Engineering</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="ECE">Electronics & Communication Engineering</option>
+                                <option value="AI-ML">AI & Machine Learning</option>
+                            </select>
+                            <small>Hold Ctrl/Cmd to select multiple branches</small>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Add Company</button>
+                    </form>
+                </div>
+                
+                <!-- Companies List -->
+                <div style="margin-top: 3rem;">
+                    <h2>Manage Companies</h2>
+                    <div id="adminCompaniesContainer" class="companies-grid">
+                        <!-- Companies will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

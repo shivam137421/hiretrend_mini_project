@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - HireTrends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Profile Page -->
+    <div class="container">
+        <div id="profilePage">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <h2>Student Profile</h2>
+                    <p>Manage your personal information and documents</p>
+                </div>
+                <button id="profileBackBtn" class="logout-btn">Back to Dashboard</button>
+            </div>
+            
+            <div class="profile-content">
+                <div class="profile-completeness">
+                    <h3>Profile Completeness: <span id="completenessPercentage">0%</span></h3>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="form-container" style="margin-top: 2rem;">
+                    <h2 class="form-title">Personal Information</h2>
+                    
+                    <form id="profileForm">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" id="fullName" class="form-input" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email" readonly>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="branch" class="form-label">Branch</label>
+                            <select id="branch" class="form-input" required>
+                                <option value="">Select your branch</option>
+                                <option value="CSE">Computer Science & Engineering</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="ECE">Electronics & Communication Engineering</option>
+                                <option value="EEE">Electrical & Electronics Engineering</option>
+                                <option value="ME">Mechanical Engineering</option>
+                                <option value="CE">Civil Engineering</option>
+                                <option value="AI-ML">AI & Machine Learning</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cgpa" class="form-label">CGPA</label>
+                            <input type="number" id="cgpa" class="form-input" placeholder="Enter your CGPA" step="0.01" min="0" max="10" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="skills" class="form-label">Skills</label>
+                            <textarea id="skills" class="form-input" placeholder="Enter your skills (comma separated)" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Save Profile</button>
+                    </form>
+                </div>
+                
+                <div class="form-container" style="margin-top: 2rem;">
+                    <h2 class="form-title">Resume Upload</h2>
+                    
+                    <div class="resume-upload">
+                        <div class="form-group">
+                            <label for="resumeUpload" class="form-label">Upload Resume (PDF only)</label>
+                            <input type="file" id="resumeUpload" class="form-input" accept=".pdf">
+                        </div>
+                        
+                        <div id="resumeStatus" class="resume-status">
+                            <p id="resumeMessage">No resume uploaded yet</p>
+                            <p id="resumeFilename" class="filename"></p>
+                        </div>
+                        
+                        <button id="uploadResumeBtn" class="form-submit">Upload Resume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

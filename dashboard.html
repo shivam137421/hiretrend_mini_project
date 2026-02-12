@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HireTrends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="container">
+        <div id="dashboard">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <h2>Welcome, <span id="userName">User</span>!</h2>
+                    <p>Branch: <span id="userBranch">-</span> | CGPA: <span id="userCGPA">-</span></p>
+                </div>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+            
+            <div class="dashboard-nav">
+                <button id="showAllBtn" class="btn btn-primary">Show All Companies</button>
+                <button id="bookmarksBtn" class="btn btn-secondary">My Bookmarks</button>
+                <a href="profile.html" class="btn btn-primary">My Profile</a>
+                <a href="notices.html" class="btn btn-primary">Notices</a>
+                <a href="interviews.html" class="btn btn-primary">Interviews</a>
+                <a href="helpline.html" class="btn btn-primary">Helpline</a>
+                <a href="reports.html" class="btn btn-primary">View Reports</a>
+                <a href="statistics.html" class="btn btn-primary">Placement Stats</a>
+            </div>
+            
+            <h2>Available Companies</h2>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="branchFilter" class="form-label">Filter by Branch</label>
+                    <select id="branchFilter" class="form-input">
+                        <option value="all">All Branches</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="minPackage" class="form-label">Min Package (LPA)</label>
+                    <input type="number" id="minPackage" class="form-input" placeholder="Min" step="0.1" min="0">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="maxPackage" class="form-label">Max Package (LPA)</label>
+                    <input type="number" id="maxPackage" class="form-input" placeholder="Max" step="0.1" min="0">
+                </div>
+            </div>
+            
+            <div id="companiesContainer" class="companies-grid">
+                <!-- Companies will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

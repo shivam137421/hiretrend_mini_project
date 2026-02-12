@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline - HireTrends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Helpline Page -->
+    <div class="container">
+        <div id="helplinePage">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <h2>Help & Support</h2>
+                    <p>We're here to assist you</p>
+                </div>
+                <button id="helplineBackBtn" class="logout-btn">Back to Dashboard</button>
+            </div>
+            
+            <div class="helpline-content">
+                <!-- Help & Support Details -->
+                <div class="form-container">
+                    <h2 class="form-title">Contact Support</h2>
+                    
+                    <div class="support-details">
+                        <div class="support-item">
+                            <span class="icon">📞</span>
+                            <div>
+                                <h3>Phone Support</h3>
+                                <p>+91-9876543210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="support-item">
+                            <span class="icon">✉️</span>
+                            <div>
+                                <h3>Email Support</h3>
+                                <p>support@hiretrends.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="support-item">
+                            <span class="icon">🕒</span>
+                            <div>
+                                <h3>Office Hours</h3>
+                                <p>Monday – Friday, 10 AM – 5 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Section -->
+                <div class="form-container" style="margin-top: 2rem;">
+                    <h2 class="form-title">Frequently Asked Questions</h2>
+                    
+                    <div id="faqContainer" class="faq-container">
+                        <!-- FAQs will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/helpline.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices - HireTrends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Notices Page -->
+    <div class="container">
+        <div id="noticesPage">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <h2>Notices & Announcements</h2>
+                    <p>Stay updated with the latest placement news</p>
+                </div>
+                <button id="noticesBackBtn" class="logout-btn">Back to Dashboard</button>
+            </div>
+            
+            <div class="notices-content">
+                <h2>Latest Notices</h2>
+                
+                <div id="noticesContainer" class="notices-grid">
+                    <!-- Notices will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/notices.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Statistics - HireTrends</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+    </div>
+
+    <!-- Statistics Page -->
+    <div class="container">
+        <div id="statisticsPage">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <h2>Placement Statistics</h2>
+                    <p>Detailed Analytics and Insights</p>
+                </div>
+                <button id="statsBackBtn" class="logout-btn">Back to Dashboard</button>
+            </div>
+            
+            <div class="statistics-section">
+                <h2>Placement Analytics</h2>
+                
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <h3>Companies vs Packages</h3>
+                        <div class="bar-chart">
+                            <div class="chart-bar" style="height: 90%; background: linear-gradient(to top, #00c6ff, #0072ff);">
+                                <span class="bar-label">Google</span>
+                                <span class="bar-value">₹50L</span>
+                            </div>
+                            <div class="chart-bar" style="height: 80%; background: linear-gradient(to top, #00c6ff, #0072ff);">
+                                <span class="bar-label">Microsoft</span>
+                                <span class="bar-value">₹45L</span>
+                            </div>
+                            <div class="chart-bar" style="height: 70%; background: linear-gradient(to top, #00c6ff, #0072ff);">
+                                <span class="bar-label">Amazon</span>
+                                <span class="bar-value">₹35L</span>
+                            </div>
+                            <div class="chart-bar" style="height: 50%; background: linear-gradient(to top, #00c6ff, #0072ff);">
+                                <span class="bar-label">TCS</span>
+                                <span class="bar-value">₹7.5L</span>
+                            </div>
+                            <div class="chart-bar" style="height: 40%; background: linear-gradient(to top, #00c6ff, #0072ff);">
+                                <span class="bar-label">Infosys</span>
+                                <span class="bar-value">₹6.5L</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <h3>Branch-wise Placement Count</h3>
+                        <div class="pie-chart-container">
+                            <div class="pie-chart">
+                                <div class="pie-slice slice-1" data-percentage="40">
+                                    <span>CSE</span>
+                                </div>
+                                <div class="pie-slice slice-2" data-percentage="25">
+                                    <span>IT</span>
+                                </div>
+                                <div class="pie-slice slice-3" data-percentage="20">
+                                    <span>ECE</span>
+                                </div>
+                                <div class="pie-slice slice-4" data-percentage="15">
+                                    <span>AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <h3>Year-wise Placement Trend</h3>
+                        <div class="line-chart">
+                            <div class="chart-point" style="left: 10%; bottom: 30%;">
+                                <span class="point-label">2021</span>
+                                <span class="point-value">195</span>
+                            </div>
+                            <div class="chart-point" style="left: 30%; bottom: 50%;">
+                                <span class="point-label">2022</span>
+                                <span class="point-value">218</span>
+                            </div>
+                            <div class="chart-point" style="left: 50%; bottom: 70%;">
+                                <span class="point-label">2023</span>
+                                <span class="point-value">245</span>
+                            </div>
+                            <div class="chart-point" style="left: 70%; bottom: 85%;">
+                                <span class="point-label">2024</span>
+                                <span class="point-value">278</span>
+                            </div>
+                            <div class="chart-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
